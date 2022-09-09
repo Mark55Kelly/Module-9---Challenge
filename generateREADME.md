@@ -1,7 +1,10 @@
 #ReadMe 
 ## Mark Kelly ReadMe Generator:
+* Please reference this video link to view the password generator in action: 
+[ReadMe File Video Instructions.zip](https://github.com/Mark55Kelly/Module-9---Challenge/files/9532065/ReadMe.File.Video.Instructions.zip)
 ## Description:
-The goal for this project is to create a Readme File using Node js. The user is presented with a set of prompts and based upon their answers, a ReadMe file is generated with answers from this prompt included in each section. 
+The goal for this project is to create a Readme File using Node js. The user is presented with a set of prompts and based upon their answers, a ReadMe file is generated with answe[ReadMe File Video Instructions.zip](https://github.com/Mark55Kelly/Module-9---Challenge/files/9532064/ReadMe.File.Video.Instructions.zip)
+rs from this prompt included in each section. 
 ## Table of Contents: 
 * [Installation](#installation)
 * [Usage](#usage)
