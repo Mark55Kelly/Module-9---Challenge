@@ -74,32 +74,32 @@ let init = () =>
         ])
 
 function generateMD(answers) {
-    return `# 
-        ${answers.title}
-        ${answers.description}
-        ## Table of Contents: 
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [License](#license)
-        * [Contributing](#contributing)
-        * [Tests](#tests)
-        * [Questions](#questions)
-        ### Installation: 
-        In order to install the necessary dependencies, open the console and run the following: 
-        ${answers.installations}
-        ### Usage:
-        ${answers.usage}
-        ### License:
-        This project is licensed under:
-        ${answers.license}
-        ### Contributing:
-        ${answers.contribution}
-        ### Tests:
-        In order to test open the console and run the following:
-        ${answers.tests}
-        ### Questions:
-        If you have any questions contact me on [GitHub](https://github.com/${answers.gitHub}) or you may contact me at ${answers.email}
-        `
+    return `#ReadMe 
+${answers.title}
+${answers.description}
+## Table of Contents: 
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+### Installation: 
+In order to install the necessary dependencies, open the console and run the following: 
+${answers.installation}
+### Usage:
+${answers.usage}
+### License:
+This project is licensed under:
+${answers.license}
+### Contributing:
+${answers.contribution}
+### Tests:
+In order to test open the console and run the following:
+${answers.instructions}
+### Questions:
+If you have any questions contact me on [GitHub](https://github.com/${answers.gitHub}) or you may contact me at ${answers.email}
+`
 }
 
 init()
