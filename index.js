@@ -56,7 +56,7 @@ let init = () =>
             {
                 type: 'list',
                 message: 'Please choose a license for the application',
-                choices: ["Tier 1", "Tier 2", "Tier 3"],
+                choices: ["BSD", "MIT", "GPL", "N/A"],
                 name: 'license'
             },
             {
@@ -75,7 +75,8 @@ let init = () =>
 
 function generateMD(answers) {
     return `#ReadMe 
-${answers.title}
+## ${answers.title}:
+## Description:
 ${answers.description}
 ## Table of Contents: 
 * [Installation](#installation)
@@ -98,11 +99,10 @@ ${answers.contribution}
 In order to test open the console and run the following:
 ${answers.instructions}
 ### Questions:
-If you have any questions contact me on [GitHub](https://github.com/${answers.gitHub}) or you may contact me at ${answers.email}
+If you have any questions contact Mark Kelly on [GitHub](https://github.com/${answers.gitHub}) or you may contact me at ${answers.email}
 `
 }
 
 init()
     .then((answers) => writeFileAsync('generateREADME.md', generateMD(answers)))
-    .then(() => console.log('Success!')
-        .catch((err) => console.error(err)));
+    .then(() => console.log('Success!'));
